@@ -1,0 +1,13 @@
+class Student:
+    def __init__(self, name):
+        self.name = name
+        print(f"Constructor Called for {self.name}")
+
+    def __del__(self):
+        print(f"Destructor Called for {self.name}")
+
+s1 = Student("Vaishnavi")
+
+del s1
+
+print("End of Program")
